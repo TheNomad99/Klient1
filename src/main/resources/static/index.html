@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script type="application/javascript">
         function visMelding(navn){
             document.write("Hallo verden for "+navn);
@@ -10,6 +12,40 @@
     </script>
 </head>
 <body>
-     <button onclick="visMelding('Per')">Trykk meg</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <div class="container mt-5 w-50 p-3 shadow p-3 mb-5 bg-white rounded">
+         <h1 class="mb-2">Welcome!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus earum tempora quisquam? Iusto dicta expedita vitae, 
+             aliquid illo iure laboriosam inventore sit reiciendis quas quo recusandae, ex nemo. Eaque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus earum tempora quisquam? Iusto dicta expedita vitae, 
+                aliquid illo iure laboriosam inventore sit reiciendis quas quo recusandae, ex nemo. Eaque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus earum tempora quisquam? Iusto dicta expedita vitae, 
+                    aliquid illo iure laboriosam inventore sit reiciendis quas quo recusandae, ex nemo. Eaque?</p>
+           <button class="btn btn-primary">Read More</button>         
+     </div>
 </body>
 </html>

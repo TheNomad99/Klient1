@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
@@ -18,4 +19,16 @@ public class DemoApplication {
 		return String.format("Hello %s!", name);
 	}
 
+	@PostMapping("/Push")
+	public String h (@RequestParam(value = "post", defaultValue = "") String post){
+		if(post.isEmpty()){
+			return "Nothing is posted";
+		}
+		else if(post.length()>0){
+			return "";
+		}
+		else{
+			return "";
+		}
+	}
 }
