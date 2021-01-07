@@ -18,17 +18,4 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
 	}
-
-	@PostMapping("/Push")
-	public String h (@RequestParam(value = "post", defaultValue = "") String post){
-		if(post.isEmpty()){
-			return "Nothing is posted";
-		}
-		else if(post.length()>0){
-			return "";
-		}
-		else{
-			return "";
-		}
-	}
 }
